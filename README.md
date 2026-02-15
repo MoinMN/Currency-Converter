@@ -28,12 +28,6 @@ A fast and lightweight web-based currency converter built using HTML, CSS, and J
 
 ---
 
-## 📷 Preview
-
-![Currency Converter Preview](img.avif)
-
----
-
 ## ⚙️ How It Works
 
 The application fetches real-time exchange rates from **ExchangeRate API** and calculates currency conversion dynamically using JavaScript.
@@ -51,8 +45,8 @@ Converted Amount = Entered Amount × Exchange Rate
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/currency-converter.git
-cd currency-converter
+git clone https://github.com/MoinMN/Currency-Converter.git
+cd Currency-Converter
 ```
 
 Open `index.html` in your browser.
@@ -62,7 +56,7 @@ Open `index.html` in your browser.
 ## 🔑 API Used
 
 **Exchange Rate API**  
-[https://www.exchangerate-api.com/](https://www.exchangerate-api.com/)
+[https://v6.exchangerate-api.com/v6/9ab8df105be12ea1a842c3c0/latest](https://v6.exchangerate-api.com/v6/9ab8df105be12ea1a842c3c0/latest)
 
 ---
 
