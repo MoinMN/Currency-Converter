@@ -85,29 +85,3 @@ Full Stack Developer
 ## 📄 License
 
 This project is open-source and free to use.
-
----
-
-## 🔥 Want Better SEO Ranking?
-
-To rank for keywords like:
-
-- "USD to INR converter"
-- "Live currency converter"
-- "Free forex converter"
-
-Consider adding:
-
-- A small blog section
-- FAQ schema
-- More keyword-rich content
-- Backlinks
-
-**Need help?** I can assist with:
-
-- Converting this into a mini SEO-optimized finance tool site
-- Adding FAQ schema
-- Improving Google India rankings
-- Upgrading UI to modern glassmorphism style
-
-**Tell me your goal:** Ranking, portfolio, or monetization?
