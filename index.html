@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Currency Converter | Live Exchange Rates | USD to INR Converter</title>
+  <meta name="description"
+    content="Online currency converter with live exchange rates. Convert USD to INR and 150+ global currencies instantly. Fast, accurate and mobile-friendly tool.">
+  <meta name="keywords"
+    content="currency converter, USD to INR, live exchange rates, forex converter, money converter online">
+  <meta name="author" content="Moin Naik">
+  <meta name="publisher" content="Moin Naik">
+  <link rel="author" href="https://www.moinnaik.in/">
+  <link rel="me" href="https://www.moinnaik.in/">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://currency.converter.moinnaik.in/">
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Currency Converter | Live Exchange Rates">
+  <meta property="og:description"
+    content="Convert currencies instantly with live exchange rates. USD, INR and 150+ currencies supported.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://currency.converter.moinnaik.in/">
+  <meta property="og:image" content="https://currency.converter.moinnaik.in/img.avif">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Currency Converter">
+  <meta name="twitter:description" content="Live exchange rate currency converter tool.">
+  <meta name="twitter:image" content="https://currency.converter.moinnaik.in/img.avif">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img.avif" type="image/x-icon">
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://v6.exchangerate-api.com">
+  <link rel="preconnect" href="https://flagsapi.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+  <!-- Animated Background Elements -->
+  <div class="bg-decoration">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+  </div>
+
+  <div class="main-wrapper">
+    <div class="container">
+      <div class="header">
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-coins"></i>
+        </div>
+        <h1>Currency Converter</h1>
+        <p class="subtitle">Real-time exchange rates at your fingertips</p>
+      </div>
+
+      <form>
+        <div class="amount-section">
+          <label for="amount">Amount</label>
+          <div class="input-wrapper">
+            <span class="currency-symbol">$</span>
+            <input type="number" value="1" id="amount" min="1" max="999999999" placeholder="Enter amount">
+          </div>
+        </div>
+
+        <div class="exchange-container">
+          <div class="currency-box from-currency">
+            <label>From</label>
+            <div class="select-wrapper">
+              <div class="flag-container">
+                <img src="https://flagsapi.com/US/flat/64.png" alt="country flag" class="flag-img">
+              </div>
+              <select name="from" class="currency-select">
+                <!-- Options populated by JavaScript -->
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </div>
+
+          <button type="button" class="swap-btn" id="swapBtn" aria-label="Swap currencies">
+            <i class="fa-solid fa-right-left"></i>
+          </button>
+
+          <div class="currency-box to-currency">
+            <label>To</label>
+            <div class="select-wrapper">
+              <div class="flag-container">
+                <img src="https://flagsapi.com/IN/flat/64.png" alt="country flag" class="flag-img">
+              </div>
+              <select name="to" class="currency-select">
+                <!-- Options populated by JavaScript -->
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-box">
+          <div class="msg"></div>
+        </div>
+
+        <button type="submit" class="convert-btn">
+          <span>Convert Currency</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+
+      <div class="info-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Powered by live exchange rate API</span>
+      </div>
+    </div>
+
+    <section class="about-section">
+      <div class="about-content">
+        <h2>Why Choose Our Currency Converter?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3>Lightning Fast</h3>
+            <p>Get instant conversion results with real-time exchange rates updated every minute.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>150+ Currencies</h3>
+            <p>Support for all major world currencies including USD, INR, EUR, GBP, JPY and more.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h3>Mobile Friendly</h3>
+            <p>Perfectly optimized for all devices - desktop, tablet, and mobile phones.</p>
+          </div>
+        </div>
+        <p class="about-description">
+          This tool provides accurate, real-time foreign exchange rates using a trusted exchange rate API.
+          Perfect for travelers, businesses, and anyone needing quick currency conversions.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Developed by <a href="https://moinnaik.in" target="_blank" rel="noopener noreferrer">Moin Naik</a></p>
+    </footer>
+  </div>
+
+  <script src="codes.js"></script>
+  <script src="script.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Currency Converter",
+      "url": "https://currency.converter.moinnaik.in/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "creator": {
+        "@type": "Person",
+        "name": "Moin Naik",
+        "url": "https://www.moinnaik.in/"
+      },
+      "description": "Online currency converter with live exchange rates supporting 150+ currencies."
+    }
+  </script>
+</body>
+
+</html>
